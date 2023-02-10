@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/layout";
 import Home from "./pages/index";
+import Listing from "./pages/listing";
 import Blog from "./pages/blog";
 import BlogPost from "./pages/blog-post";
 import Error from "./pages/error";
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout entry={getEntry} />}>
           <Route index element={<Home entry={getPageRes} />} />
+          <Route path="/listing" element={<Listing entry={getPageRes} />} />
           <Route path="/:page" element={<Home entry={getPageRes} />} />
           <Route path="/blog" element={<Blog entry={getPageRes} />} />
           <Route

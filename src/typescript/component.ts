@@ -133,3 +133,7 @@ export type RenderProps = {
   locale: string;
   pageComponents:Component[];
 }
+
+export type RenderClassicProps = {
+  classicData: object;
+}
