@@ -25,6 +25,15 @@ export type PageEntry = {
     uid: string;
     locale: string;
   }
+
+export type classicEntry = {
+    title: string;
+    dishcalories: number;
+    dishdesc: string;
+    dishprice: number; 
+    locale: string; 
+    dishname: string;                           
+}
   
 export type Prop = {
     entry: Function

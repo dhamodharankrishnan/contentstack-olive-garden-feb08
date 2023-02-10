@@ -33,6 +33,16 @@ export const getAllEntries = async () => {
   return response[0];
 };
 
+export const getClassicAllEntries = async () => {
+  const response = (await Stack.getEntry({
+    contentTypeUid: "classic_entries",
+    jsonRtePath: undefined,
+    referenceFieldPath: undefined,
+  })) as any;
+  liveEdit && addEditableTags(response[0], "page", true);
+  return response[0];
+};
+
 export const getPageRes = async (entryUrl: string) => {
   const response = (await Stack.getEntryByUrl({
     contentTypeUid: "page",
