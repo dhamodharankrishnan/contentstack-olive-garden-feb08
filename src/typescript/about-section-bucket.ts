@@ -12,6 +12,7 @@ export type Bucket = {
   icon: Image;
   $: Object;
   url: string;
+  call_to_action: Action;
 };
 
 type BucketsList = {
