@@ -11,6 +11,7 @@ import "./styles/style.css";
 import "./styles/modal.css";
 import "@contentstack/live-preview-utils/dist/main.css";
 import "react-loading-skeleton/dist/skeleton.css";
+import 'bootstrap/dist/css/bootstrap.css';
 import { EntryProps } from "../src/typescript/layout";
 
 function App() {
